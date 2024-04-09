@@ -25,7 +25,7 @@ jobs:
           aws-region: us-east-1
 
       - name: Change to Pulumi project directory
-        run: infra
+        run: cd infra
 
       - name: Preview Changes
         run: pulumi preview
