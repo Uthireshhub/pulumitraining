@@ -24,8 +24,11 @@ jobs:
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           aws-region: us-east-1
 
+      - name: Set Pulumi Access Token
+        run: pulumi login --cloud-url "https://api.pulumi.com/" --cloud-access-token "${{ secrets.PULUMI_ACCESS_TOKEN }}"
+
       - name: Change to Pulumi project directory
-        run: ./
+        run: cd infra
 
       - name: Preview Changes
         run: pulumi preview
