@@ -20,4 +20,4 @@ jobs:
           aws-region: us-east-1
 
       - name: Create S3 Bucket
-        run: aws s3 mb s3://mybucket-githubworkflow
+        run: aws s3 mb s3://mybucket-githubworkflows3
