@@ -1,4 +1,4 @@
-name: Create S3 Bucket
+name: Create S3 Bucket-Manual
 
 on:
   workflow_dispatch:
